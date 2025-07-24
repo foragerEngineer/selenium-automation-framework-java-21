@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Game",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "releaseDate": {
+      "type": "string",
+      "format": "yyyy-MM-dd HH:mm:ss"
+    },
+    "reviewScore": {
+      "type": "integer"
+    },
+    "category": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "string"
+    }
+  },
+  "required": ["id", "name", "releaseDate", "reviewScore", "category", "rating"],
+  "additionalProperties": false
+}

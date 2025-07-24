@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Selenium Framework Tests">
+    <test thread-count="2" name="Selenium Framework Tests">
+        <classes>
+            <class name="seleniumframework.tests.letCodeWebTests.LetCodeWebTests"/>
+        </classes>
+    </test>
+</suite>
