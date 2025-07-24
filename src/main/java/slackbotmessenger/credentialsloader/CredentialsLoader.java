@@ -33,14 +33,14 @@ public class CredentialsLoader {
             Element propertiesElement = null;
             for (int i = 0; i < profiles.getLength(); i++) {
                 Element profile = (Element) profiles.item(i);
-                if ("github".equals(profile.getElementsByTagName("id").item(0).getTextContent())) {
+                if ("automation".equals(profile.getElementsByTagName("id").item(0).getTextContent())) { // Updated profile id
                     propertiesElement = (Element) profile.getElementsByTagName("properties").item(0);
                     break;
                 }
             }
 
             if (propertiesElement == null) {
-                throw new IllegalArgumentException("<properties> section for 'github' profile not found in settings.xml.");
+                throw new IllegalArgumentException("<properties> section for 'automation' profile not found in settings.xml.");
             }
 
             // Fetch token, webhook URL, and channel ID
