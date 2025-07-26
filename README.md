@@ -3,7 +3,6 @@
 ### Prerequisites
 1. Ensure you have Java 21 installed
 2. Ensure you set java 21 within your environment variables
-3. This project records with `ffmpeg`, installed from `Brew`, so be sure to install this. Otherwise, comment out the recording functionality in the `BaseTest.java` class under the @BeforeMethod setup and comment out `MonteScreenRecUtil.stopRecording();`.
 
 ### Slackbot Reporting
 1. This project utilizes Slackbot API for reporting
